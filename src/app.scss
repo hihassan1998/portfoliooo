@@ -10,9 +10,15 @@ html{
 }
 
 body {
-    background-color: #1c1c3c;
+    background-color: #0c0c1d;
     color: lightgray;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
 section{
     height: 100vh;
+    scroll-snap-align: center;
 }
