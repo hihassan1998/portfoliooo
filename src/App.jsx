@@ -1,6 +1,6 @@
 import "./app.scss"
 import Navbar from "../components/navbar/Navbar";
-import Test from "./Test.jsx"
+// import Test from "./Test.jsx"
 
 const App = () => {
   return <div>
