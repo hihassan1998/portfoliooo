@@ -1,19 +1,21 @@
-import "./app.scss"
-import Navbar from "../components/navbar/Navbar";
 // import Test from "./Test.jsx"
+import "./app.scss"
+import Navbar from "../components/navbar/NAvbar";
+
 
 const App = () => {
   return <div>
-    <section>
+    <section id="Startsida">
       <Navbar/>
     </section>
-    <section>Paralax</section>
+    <section id="Tjänster">Parallax</section>
     <section>Services</section>
-    <section>Parallax</section>
+    <section id="Portfölj">Parallax</section>
     <section>Portfolio1</section>
     <section>Portfolio2</section>
     <section>Portfolio3</section>
-    <section>Contact</section>
+    <section id="Kontakt">Contact</section>
+
     {/* <Test/>
     <Test/>
     <Test/> */}
