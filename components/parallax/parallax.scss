@@ -7,10 +7,10 @@
     justify-content: center;
     overflow: hidden;
     h1 {
-        font-size: 100px;
+        font-size: 7vw;
         position: absolute;
-        z-index: 3;
-        text-align: center
+        z-index: 4;
+        text-align: center;
     }
     .mountains {
         background-image: url("/mountains.png");
@@ -34,7 +34,7 @@
         background-image: url("/stars.png");
         background-size: cover;
         background-position: bottom;
-        width: 100%;
+        width: 150%;
         height: 100%;
         position: absolute;
         z-index: 1;
