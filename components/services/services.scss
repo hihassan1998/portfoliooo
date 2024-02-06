@@ -1,90 +1,90 @@
-.Services{
-    background: linear-gradient(180deg, #0c0c1d , #111132);
+.Services {
+    background: linear-gradient(180deg, #0c0c1d, #111132);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-
-
- .textContainer{
+    .textContainer {
         flex: 1;
         align-self: flex-end;
         display: flex;
         align-items: center;
         gap: 20px;
-        
-        p{
+
+        p {
             font-weight: 200;
             font-size: 15px;
             color: gray;
             text-align: right;
         }
 
-        hr{
+        hr {
             width: 50px;
             border: none;
             border-top: 0.5px solid gray;
         }
     }
 
- .titleContainer{
+    .titleContainer {
         flex: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .title{
+        .title {
             display: flex;
             align-items: center;
             gap: 50px;
 
-            img {max-width: 300px;
+            img {
+                max-width: 300px;
                 height: 100px;
                 border-radius: 50px;
                 object-fit: cover;
-                }
+            }
+
             h1 {
                 font-size: 96px;
                 font-weight: 100;
-                &:first-line {
-                    font-weight: bold;
-            }
+              
+                &::before {
+                  font-weight: bold;
+                }
+              }
 
-            button{
+            button {
                 width: 300px;
                 height: 100px;
+                border-radius: 50px;
                 background-color: orange;
                 border: none;
                 font-size: 24px;
                 cursor: pointer;
-
             }
         }
     }
 
- .listContainer{
+    .listContainer {
         flex: 2;
         display: flex;
         max-width: 1366px;
         margin: auto;
 
-        .box{
+        .box {
             padding: 50px;
             border: 0.5px solid gray;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
-            button{
+            button {
                 padding: 10px;
                 background-color: orange;
                 border: none;
+                border-radius: 10px;
                 cursor: pointer;
-                
             }
-
         }
     }
-}
 }

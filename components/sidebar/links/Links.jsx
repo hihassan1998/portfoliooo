@@ -23,7 +23,7 @@ const itemVariants= {
   },
   closed:{
     y: 50,
-    opacity:1,
+    opacity:0,
     },
 };
 
