@@ -62,28 +62,28 @@ const Services = () => {
     </motion.div>
         <motion.div className="listContainer"  variants={variants}>
             <div className="box" whilehover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>MERN FullStack</h2>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempoSed do eiusmod r incididunt ut labore et
                 </p> 
                 <button>Gå</button>              
             </div>
             <div className="box" whilehover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>Javascript</h2>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
                 </p> 
                 <button>Gå</button>              
             </div>
             <div className="box" whilehover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>Python</h2>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
                 </p> 
                 <button>Gå</button>              
             </div>
             <div className="box" whilehover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>React,Express,SQL</h2>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
                 </p> 

@@ -12,14 +12,14 @@ const items = [
     },
     {
         id:2,
-        title:"Next.js Blog",
+        title:"Express.js ",
         img:"https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/gamer-dude-ii-mindy-sommers.jpg",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
 
     },
     {
         id:3,
-        title:"Express.js Servers",
+        title:"Express.js Bookstore Server",
         img:"https://images.freeimages.com/vhq/images/previews/d50/butterfly-papilio-philenor-side-clip-art-545705.jpg?fmt=webp&w=500",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
 
