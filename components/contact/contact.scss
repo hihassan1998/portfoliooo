@@ -22,9 +22,13 @@
     }
     .formContainer{
         flex: 1;
+        position: relative;
 
         .phoneSvg{
-            background-color: rebeccapurple;
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
         }
 
         form{

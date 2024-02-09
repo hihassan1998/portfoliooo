@@ -1,7 +1,8 @@
 import "./contact.scss"
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import {motion, useInView} from "framer-motion"
 import Typewriter from "react-typewriter-effect"
+import emailjs from '@emailjs/browser';
 
 const TypewriterText = ({ text, speed = 50 }) => {
     return <Typewriter typing={1} pause={1000} speed={speed} eraseDelay={2000} text={text} />;
@@ -22,11 +23,37 @@ const variants={
     }
 }
 
-
-
 const Contact = () => {
+const ref = useRef();
+const formRef = useRef();
+const [error,setError] = useState(false)
+const [success,setSuccess] = useState(false)
+
+const isInView = useInView(ref, { margin: "-100px" });
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+     .sendForm('service_jhot97p', 'template_1phekqg', formRef.current, {
+       publicKey: 'mVZoDOGQZN238hGm8',
+      })
+      .then(
+        (result) => {
+          setSuccess(true)
+        },
+        (error) => {
+          setError(true)
+        },
+      );
+  };
   return (
-    <motion.div className="contact" variants={variants} initial="initial" whileInView="animate" >  
+    <motion.div ref={ref}
+    className="contact" 
+    variants={variants} 
+    initial="initial" 
+    whileInView="animate"
+    >  
         <motion.div className="textContainer" variants={variants}>
         <h1>
         <TypewriterText text="Låt oss skapa tillsammans" />
@@ -44,7 +71,7 @@ const Contact = () => {
             <span>+46 765834699</span>
         </motion.div>
       </motion.div>
-        <div className="formContainer">
+      <div className="formContainer">
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
@@ -73,17 +100,24 @@ const Contact = () => {
             C32.666,7.326,25.339,0,16.333,0z"
             />
           </svg>
-          </motion.div>
-            <form>
-                <input type="text" required placeholder="Namn" />
-                <input type="text" required placeholder="E-post" />
-                <textarea rows={10} placeholder="Meddelande" />
-                <button>Skicka</button>
-            </form>
-            
+        </motion.div>
+        <motion.form
+          ref={formRef}
+          onSubmit={sendEmail}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 4, duration: 1 }}
+        >
+            <input type="text" required placeholder="Namn" name="namn"/>
+            <input type="text" required placeholder="E-post" name="epost"/>
+            <textarea rows={10} placeholder="Meddelande" name="message" />
+            <button>Skicka</button>
+            {error  && "Error"}
+            {success && "Success"}
+            </motion.form>
         </div>
     </motion.div>
-  )
-}
+  );
+};
 
 export default Contact
