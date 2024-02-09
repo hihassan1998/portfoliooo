@@ -61,7 +61,7 @@ const Hero = () => {
           MERN Fullstack Utveckling
         </motion.div>
         <div className='imageContainer'>
-            <img src="/bluehalf.png" alt="" />
+            <img src="./bluehalf.png" alt="" />
         </div>
         
     </div>
