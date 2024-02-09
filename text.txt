@@ -1,6 +1,0 @@
-<p>Frontend Utvecklare | Backend Utvecklare | Mitt focus är mot frontend utveckling och MERN fullstack utveckling <FaDatabase/> <SiExpress/> <FaReact/> <DiNodejsSmall/> <br/> <FaCode/> Aspirerande Full Stack Utveckalare</p> 
-
-
-<p>
-      Fullstackutvecklare med fokus på frontend och MERN-teknologi. Behärskar <FaDatabase /> MongoDB, <SiExpress /> Express.js, <FaReact /> React och <DiNodejsSmall /> Node.js. Brinner för att skapa engagerande digitala upplevelser med precision i varje <FaCode /> kodrad.
-    </p>
