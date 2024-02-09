@@ -27,10 +27,6 @@ const Services = () => {
 
     const isInView = useInView(ref, {margin:"-100px"})
 
-
-
-
-
   return (
     <motion.div className="Services" 
         variants={variants}
@@ -40,6 +36,14 @@ const Services = () => {
         ref={ref}
         animate={isInView && "animate"}
        >
+
+      <div className="mobServices" 
+        variants={variants}
+        initial="initial"
+        ref={ref}
+        animate={"animate"}
+       >
+        
         <motion.div className="textContainer"  variants={variants}>
         <p> Frontend Utvecklare | Backend Utvecklare | Mitt focus är mot frontend utveckling och MERN fullstack utveckling <FaDatabase/> <SiExpress/> <FaReact/> <DiNodejsSmall/> <br /> 
         <FaCode/> Aspirerande Full Stack Utveckalare
@@ -90,6 +94,7 @@ const Services = () => {
                 <button>Gå</button>              
             </div>
         </motion.div>
+        </div>
     </motion.div>
   )
 }
