@@ -37,12 +37,12 @@ const Services = () => {
         animate={ "animate"}
        >
 
-      {/* <div className="mobServices" 
+      <div className="mobServices" 
         variants={variants}
         initial="initial"
         ref={ref}
         animate={"animate"}
-       > */}
+       > 
         
         <motion.div className="textContainer"  variants={variants}>
         <p> Frontend Utvecklare | Backend Utvecklare | Mitt focus är mot frontend utveckling och MERN fullstack utveckling <FaDatabase/> <SiExpress/> <FaReact/> <DiNodejsSmall/> <br /> 
@@ -52,7 +52,7 @@ const Services = () => {
         </motion.div>
         <motion.div className="titleContainer" variants={variants}>
       <div className="title">
-        <img src="./public/people.webp" alt="" />
+        <img src="./people.webp" alt="" />
         <h1>
           <motion.b whilehover={{color:"orange"}}>Unika </motion.b> idéer
         </h1>
@@ -94,7 +94,7 @@ const Services = () => {
                 <button>Gå</button>              
             </div>
         </motion.div>
-        {/* </div> */}
+        </div> 
     </motion.div>
   )
 }

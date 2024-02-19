@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./portfolio.scss"
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import Typewriter from "react-typewriter-effect";
+ 
 
 
   
@@ -9,7 +10,7 @@ const items = [
     {
         id:1,
         title:"React-App",
-        img:"https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2150394443.jpg?w=740&t=st=1707232782~exp=1707233382~hmac=15cb390713fbe11594c1d734aabf079a8d24e96020f426ef9c7e87ef579b1c75",
+        img:"./reactapp.jpg.png",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
         demoLink:"https://hihassan1998.github.io/calculator/",
 
@@ -24,14 +25,14 @@ const items = [
     {
         id:3,
         title:"Express.js Bookstore Server",
-        img:"https://images.freeimages.com/vhq/images/previews/d50/butterfly-papilio-philenor-side-clip-art-545705.jpg?fmt=webp&w=500",
+        img:  "https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2150394443.jpg?w=740&t=st=1707232782~exp=1707233382~hmac=15cb390713fbe11594c1d734aabf079a8d24e96020f426ef9c7e87ef579b1c75" ,
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
         demoLink:"https://github.com/hihassan1998/expressBookReviews/tree/main/final_project/router",
     },
     {
         id:4,
         title:"C# applications",
-        img:"https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/star-droid-watercolor-3-naxart-studio.jpg",
+        img:"./watsonai_csharp.png",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
 
     },
