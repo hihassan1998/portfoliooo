@@ -9,29 +9,41 @@ import Typewriter from "react-typewriter-effect";
 const items = [
     {
         id:1,
-        title:"React-App",
-        img:"./reactapp.jpg.png",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
-        demoLink:"https://hihassan1998.github.io/calculator/",
+        title:"Technotes App - MERN",
+        img:"./techblack.png",
+        desc:"A subsitute for sticknotes system at a tech company digitalized.",
+        demoLink:"https://github.com/hihassan1998/MERNapp",
 
     },
     {
         id:2,
-        title:"Shopping Cart",
-        img:"https://img.freepik.com/premium-vector/shopping-basket-vector-illustration_135595-41139.jpg?w=740",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
-        demoLink:"https://hihassan1998.github.io/kduia-shopping-app/",
+        title:"Online Course App - Django Stack",
+        img:"./courseapp.png" ,
+        desc:"Django stack utelized to create a online course web application with three sample courses and PostgresSQL used on the backend as Database for the app.",
+        demoLink:"https://github.com/hihassan1998/djangoCourseApp/blob/main/README.md",
     },
     {
         id:3,
-        title:"Express.js Bookstore Server",
-        img:  "https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2150394443.jpg?w=740&t=st=1707232782~exp=1707233382~hmac=15cb390713fbe11594c1d734aabf079a8d24e96020f426ef9c7e87ef579b1c75" ,
+        title:"360Customer -  ",
+        img:  "./360home.png" ,
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
         demoLink:"https://github.com/hihassan1998/expressBookReviews/tree/main/final_project/router",
     },
     {
         id:4,
-        title:"C# applications",
+        title:"Sentiments Analyzer - IBM Watson AI",
+        img:"./watsonai_csharp.png",
+        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
+    },
+    {
+      id:5,
+        title:"Django Course App",
+        img:"./watsonai_csharp.png",
+        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque."
+    },
+    {
+      id:6,
+        title:"Django Course App",
         img:"./watsonai_csharp.png",
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
 

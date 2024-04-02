@@ -45,7 +45,7 @@ const Services = () => {
        > 
         
         <motion.div className="textContainer"  variants={variants}>
-        <p> Frontend Utvecklare | Backend Utvecklare | Mitt focus är mot frontend utveckling och MERN fullstack utveckling <FaDatabase/> <SiExpress/> <FaReact/> <DiNodejsSmall/> <br /> 
+        <p> MERN fullstack utveckling <FaDatabase/> <SiExpress/> <FaReact/> <DiNodejsSmall/> <br /> 
         <FaCode/> Aspirerande Full Stack Utveckalare
         </p> 
         <hr />
