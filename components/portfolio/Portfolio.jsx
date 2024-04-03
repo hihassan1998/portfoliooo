@@ -24,7 +24,7 @@ const items = [
     },
     {
         id:3,
-        title:"360Customer -  ",
+        title:"360Customer - Python  ",
         img:  "./360home.png" ,
         desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
         demoLink:"https://github.com/hihassan1998/expressBookReviews/tree/main/final_project/router",
@@ -33,7 +33,7 @@ const items = [
         id:4,
         title:"Sentiments Analyzer - IBM Watson AI",
         img:"./watsonai_csharp.png",
-        desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae facilis expedita quae earum a consequuntur eos quam commodi minima unde explicabo eius optio numquam magni quaerat laboriosam, autem neque.",
+        desc:"BAsed on your input a score is placed on your input and an analysis of your sentiment in your input is given as an output to the user.",
     },
     {
       id:5,
