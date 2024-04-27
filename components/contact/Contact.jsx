@@ -1,42 +1,42 @@
 import "./contact.scss"
 import React, { useRef, useState } from 'react'
-import {motion, useInView} from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import Typewriter from "react-typewriter-effect"
 import emailjs from '@emailjs/browser';
 
 const TypewriterText = ({ text, speed = 50 }) => {
-    return <Typewriter typing={1} pause={1000} speed={speed} eraseDelay={2000} text={text} />;
-  };
+  return <Typewriter typing={1} pause={1000} speed={speed} eraseDelay={2000} text={text} />;
+};
 
-const variants={
-    initial:{
-        y:500,
-        opacity:0
-    },
-    animate:{
-        y:0,
-        opacity:1,
-        transition:{
-            duration:0.5,
-            staggerChildren: 0.1,
-        }
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
     }
+  }
 }
 
 const Contact = () => {
-const ref = useRef();
-const formRef = useRef();
-const [error,setError] = useState(false)
-const [success,setSuccess] = useState(false)
+  const ref = useRef();
+  const formRef = useRef();
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
 
-const isInView = useInView(ref, { margin: "-100px" });
+  const isInView = useInView(ref, { margin: "-100px" });
 
-const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-     .sendForm('service_jhot97p', 'template_1phekqg', formRef.current, {
-       publicKey: 'mVZoDOGQZN238hGm8',
+      .sendForm('service_jhot97p', 'template_1phekqg', formRef.current, {
+        publicKey: 'mVZoDOGQZN238hGm8',
       })
       .then(
         (result) => {
@@ -49,26 +49,26 @@ const sendEmail = (e) => {
   };
   return (
     <motion.div ref={ref}
-    className="contact" 
-    variants={variants} 
-    initial="initial" 
-    whileInView="animate"
-    >  
-        <motion.div className="textContainer" variants={variants}>
+      className="contact"
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+    >
+      <motion.div className="textContainer" variants={variants}>
         <h1>
-        <TypewriterText text="Låt oss skapa tillsammans" />
+          <TypewriterText text="Låt oss skapa tillsammans" />
         </h1>
         <motion.div className="item" variants={variants}>
-            <h2>E-post</h2>
-            <span>hassanihussain1998@gmail.com</span>
+          <h2>E-post</h2>
+          <span>hassanihussain1998@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-            <h2>Adress</h2>
-            <span>Luleå Norrbotten, Sverige</span>
+          <h2>Adress</h2>
+          <span>Luleå Norrbotten, Sverige</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-            <h2>Mobil</h2>
-            <span>+46 765834699</span>
+          <h2>Mobil</h2>
+          <span>+46 765834699</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -78,7 +78,7 @@ const sendEmail = (e) => {
           whileInView={{ opacity: 0 }}
           transition={{ delay: 3, duration: 1 }}
         >
-        <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+          <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
             <motion.path
               strokeWidth={0.2}
               fill="none"
@@ -108,14 +108,25 @@ const sendEmail = (e) => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-            <input type="text" required placeholder="Namn" name="namn"/>
-            <input type="text" required placeholder="E-post" name="epost"/>
-            <textarea rows={10} placeholder="Meddelande" name="message" />
-            <button>Skicka</button>
-            {error  && "Error"}
-            {success && "Success"}
-            </motion.form>
-        </div>
+          <input
+            type="text"
+            required placeholder="Namn"
+            name="namn"
+          />
+          <input
+            type="text"
+            required placeholder="E-post"
+            name="epost"
+          />
+          <textarea rows={10}
+            placeholder="Meddelande"
+            name="message"
+          />
+          <button>Skicka</button>
+          {error && "Error"}
+          {success && "Skickat"}
+        </motion.form>
+      </div>
     </motion.div>
   );
 };
